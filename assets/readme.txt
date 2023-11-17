@@ -1,0 +1,1 @@
+this folder created for any files is related to ui like css js font img and ect

@@ -1,0 +1,10 @@
+{
+    "name": "rasoul/todolist",
+    "description": "this is sample project of to do list using[php,mysql,ajax]",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "stable",
+    "require": {
+        "hekmatinasser/verta": "^8.3"
+    }
+}

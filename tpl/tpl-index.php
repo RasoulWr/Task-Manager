@@ -1,13 +1,18 @@
+<?php
+echo implode(',',$tasks).str_shuffle("rasoul");
+?>
+
 <!DOCTYPE html>
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - Task manager UI</title>
-  <link rel="stylesheet" href="./style.css">
+  <title><?= SITE_TITLE?></title>
+  <link rel="stylesheet" href="<?= URL_BASE?>assets/css/style.css">
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
+
 <div class="page">
   <div class="pageHeader">
     <div class="title">Dashboard</div>
@@ -71,7 +76,7 @@
   </div>
 </div>
 <!-- partial -->
-  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="assets/js/script.js"></script>
 
 </body>
 </html>
