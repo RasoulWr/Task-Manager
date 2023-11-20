@@ -1,6 +1,3 @@
-<?php
-echo implode(',',$tasks).str_shuffle("rasoul");
-?>
 
 <!DOCTYPE html>
 <html lang="en" >
@@ -26,13 +23,20 @@ echo implode(',',$tasks).str_shuffle("rasoul");
         </div>
       </div>
       <div class="menu">
-        <div class="title">Navigation</div>
+        <div class="title">Folders</div>
         <ul>
-          <li> <i class="fa fa-home"></i>Home</li>
-          <li><i class="fa fa-signal"></i>Activity</li>
-          <li class="active"> <i class="fa fa-tasks"></i>Manage Tasks</li>
-          <li> <i class="fa fa-envelope"></i>Messages</li>
+           <?php  foreach ($folders as $folder):?>
+            <li>
+              <a href="?folderId=<?=$folder->id?>">  <i class="fa fa-folder"></i><?= $folder->name?></a>
+              <a href="?deletefolderId=<?= $folder->id?>"> <i class = "fa fa-trash-o" id="trashIcon"></i></a>
+            </li>
+            <?php endforeach;?>
+          <li class="active"> <i class="fa fa-tasks"></i>Current Folder</li>
         </ul>
+      </div>
+      <div>
+        <input type="text" id="AddFolderInput" placeholder=" add new folder">
+        <button id="AddFolderBtn" class="btn">+</button>
       </div>
     </div>
     <div class="view">

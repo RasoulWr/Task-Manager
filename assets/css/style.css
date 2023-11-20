@@ -267,3 +267,28 @@ body {
 .clear {
   clear: both;
 }
+
+#trashIcon{
+  margin: 0px 34px;
+ 
+}
+#trashIcon:hover{
+  
+  color: red;
+}
+
+input#AddFolderInput {
+  padding: 3px 3px;
+  border: 1px solid green;
+  border-radius: 3px;
+}
+
+button#AddFolderBtn:hover {
+  color: #232624;
+  background: #8ed18e;
+}
+
+a {
+  text-decoration: none;
+  color: #5ccecf;
+}
