@@ -25,6 +25,15 @@ function  deleteFolder($folderId){
 
 }
 
+function addFolder($folderName){
+    global $pdo;
+    $currentId = getCurrentUserId();
+    $sql = "INSERT INTO folders (name,user_id) VALUES (:fname,:userid);";
+    $stmt = $pdo->prepare($sql);
+    $stmt->execute(['fname'=>$folderName,'userid'=>$currentId]);
+    return 1;
+}
+
 
 function getTask(){
     return 1;

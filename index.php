@@ -8,5 +8,5 @@ if(isset($_GET['deletefolderId']) && is_numeric($_GET['deletefolderId'])){
 
 $folders = getFolder();
 
-
+# $tasks = getTask();
 include "tpl/tpl-index.php";
