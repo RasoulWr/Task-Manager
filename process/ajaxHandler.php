@@ -13,8 +13,24 @@
          }else{
             echo "folderName should be longer than 3 letters";
          }
-         break;
-      
+      break;
+      case 'addTask':
+         if(($_POST['folderId']) == null ){
+            echo "please select a folder";
+            die();
+         }
+         if(strlen($_POST['taskTitle']) < 3 ){
+            echo "Task Title should be more than 2 letters :)";
+            die();
+         }
+            echo addTask($_POST['taskTitle'],$_POST['folderId']);
+      break;
+         // print_r($_POST);
+         
+      case 'taskSwitch':
+         $taskId = $_POST['taskId'];
+         changeTaskStatus($taskId);
+      break;
       default:
          diePage("request invalid");
          break;

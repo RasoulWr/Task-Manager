@@ -239,9 +239,7 @@ body {
   float: left;
   font-weight: 600;
 }
-.main .view .content .list ul li .info {
-  float: right;
-}
+
 .main .view .content .list ul li .info span {
   font-weight: 300;
 }
@@ -282,7 +280,13 @@ input#AddFolderInput {
   border: 1px solid green;
   border-radius: 3px;
 }
+input#addTaskInput{
 
+  border: 1px solid green;
+  width: 260%; 
+  padding: 7px  ; 
+  border-radius: 6px
+}
 button#AddFolderBtn:hover {
   color: #232624;
   background: #8ed18e;
@@ -291,4 +295,15 @@ button#AddFolderBtn:hover {
 a {
   text-decoration: none;
   color: #5ccecf;
+}
+li.active a {
+  text-decoration: none;
+  color: #79BC46;
+}
+
+.main .view .content .list ul li .info {
+  float: right;
+}
+li{
+  cursor: pointer;
 }

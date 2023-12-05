@@ -1,4 +1,5 @@
 <?php
+session_start();
 include "constant.php"; //  در این خط برای این روت پت شناسایی نمیشود چون در داخل خود همین فایل تعریف شده است و فعلا قابل شناسایی نیست
 include ROOT_PATH."/bootstrap/config.php";
 include ROOT_PATH."/vendor/autoload.php";
